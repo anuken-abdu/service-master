@@ -914,12 +914,16 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 .form-note{text-align:center;font-size:11px;color:var(--text-mute);margin-top:12px;line-height:1.4}
 
 .toast{
-  position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(100px);
-  background:var(--success);color:#fff;padding:14px 24px;border-radius:12px;
+  position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(140px);
+  background:var(--success);color:#fff;padding:14px 22px;border-radius:12px;
   box-shadow:0 10px 30px rgba(16,185,129,.4);font-weight:700;font-size:14px;
-  z-index:1300;transition:transform .3s ease;
+  z-index:1300;transition:transform .35s ease, opacity .35s ease;
+  opacity:0;pointer-events:none;cursor:pointer;max-width:90vw;text-align:center;
 }
-.toast.show{transform:translateX(-50%) translateY(0)}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;pointer-events:auto}
+@media (max-width:767px){
+  .toast{bottom:150px;font-size:13px;padding:12px 18px}
+}
 
 /* =========================================================
    ANIMATIONS
@@ -2093,7 +2097,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 </div>
 
 <!-- Toast -->
-<div class="toast" id="toast">Заявка отправлена! Перезвоним в течение 10 минут.</div>
+<div class="toast" id="toast" role="status">Заявка отправлена! Перезвоним в 10 минут</div>
 
 <script>
 /* ========== THEME (dark by default) ========== */
@@ -2223,12 +2227,19 @@ document.addEventListener('keydown', e => {
 
 /* ========== FORMS ========== */
 const PHONE = '77077052178';
+let toastTimer = null;
 function showToast(text){
   const t = document.getElementById('toast');
-  t.textContent = text || 'Заявка отправлена! Перезвоним в течение 10 минут.';
+  t.textContent = text || 'Заявка отправлена! Перезвоним в 10 минут';
   t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 4000);
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 3500);
 }
+// Клик по тосту закрывает его
+document.getElementById('toast').addEventListener('click', () => {
+  document.getElementById('toast').classList.remove('show');
+  if (toastTimer) clearTimeout(toastTimer);
+});
 function submitOrder(e){
   e.preventDefault();
   const f = e.target;
