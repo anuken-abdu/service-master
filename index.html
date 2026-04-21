@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Ремонт и заправка кондиционеров в Алматы — выезд за час | SERVICE-MASTER</title>
-<meta name="description" content="Ремонт, заправка и чистка кондиционеров в Алматы. Обслуживание газовых котлов, стиральных и посудомоечных машин. Полировка варочных панелей. Работаем с юрлицами (договор, АВР, ЭСФ). Звоните: +7 707 705 21 78">
+<meta name="description" content="Ремонт, заправка и чистка кондиционеров в Алматы. Обслуживание газовых котлов, стиральных и посудомоечных машин. Полировка варочных панелей. Работаем с юрлицами (договор, АВР, ЭСФ). Звоните: +7 747 702 41 71">
 <meta name="keywords" content="ремонт кондиционеров Алматы, заправка кондиционера фреоном, чистка кондиционера, ремонт сплит-системы, ремонт газового котла, чистка газового котла, ремонт стиральной машины Алматы, ремонт посудомоечной машины, полировка стеклокерамики, обслуживание кондиционеров юрлицам">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://coolservice.kz/">
@@ -41,7 +41,7 @@
   "image": "https://coolservice.kz/images/og-cover.jpg",
   "@id": "https://coolservice.kz/",
   "url": "https://coolservice.kz/",
-  "telephone": "+77077052178",
+  "telephone": "+77477024171",
   "priceRange": "₸₸",
   "address": {
     "@type": "PostalAddress",
@@ -78,12 +78,13 @@
    RESET & BASE
    ========================================================= */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;width:100%}
 body{
   font-family:'Montserrat',-apple-system,BlinkMacSystemFont,sans-serif;
   font-weight:400;line-height:1.55;
   color:var(--text);background:var(--bg);
   overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  width:100%;max-width:100vw;
 }
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
@@ -91,32 +92,6 @@ button{font-family:inherit;cursor:pointer;border:0;background:none}
 input,select,textarea{font-family:inherit;font-size:inherit}
 
 :root{
-  --bg:#ffffff;
-  --bg-soft:#f4f7fb;
-  --bg-card:#ffffff;
-  --primary:#2563eb;
-  --primary-dark:#1d4ed8;
-  --primary-light:#dbeafe;
-  --cyan:#06b6d4;
-  --cyan-light:#cffafe;
-  --text:#475569;
-  --text-dark:#0f172a;
-  --text-mute:#64748b;
-  --border:#e2e8f0;
-  --border-strong:#cbd5e1;
-  --success:#10b981;
-  --warn:#f59e0b;
-  --warn-dark:#d97706;
-  --r:14px;
-  --r-sm:10px;
-  --r-lg:20px;
-  --shadow-sm:0 1px 2px rgba(15,23,42,.05);
-  --shadow:0 4px 14px rgba(15,23,42,.08);
-  --shadow-lg:0 18px 40px -12px rgba(37,99,235,.25);
-  --container:1280px;
-  --header-h:72px;
-}
-[data-theme="dark"]{
   --bg:#0f172a;
   --bg-soft:#1e293b;
   --bg-card:#1e293b;
@@ -130,12 +105,42 @@ input,select,textarea{font-family:inherit;font-size:inherit}
   --text-mute:#94a3b8;
   --border:#334155;
   --border-strong:#475569;
+  --success:#10b981;
+  --warn:#f59e0b;
+  --warn-dark:#d97706;
+  --r:14px;
+  --r-sm:10px;
+  --r-lg:20px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.3);
+  --shadow:0 4px 14px rgba(0,0,0,.35);
+  --shadow-lg:0 18px 40px -12px rgba(59,130,246,.35);
+  --container:1280px;
+  --header-h:72px;
+}
+[data-theme="light"]{
+  --bg:#ffffff;
+  --bg-soft:#f4f7fb;
+  --bg-card:#ffffff;
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --primary-light:#dbeafe;
+  --cyan:#06b6d4;
+  --cyan-light:#cffafe;
+  --text:#475569;
+  --text-dark:#0f172a;
+  --text-mute:#64748b;
+  --border:#e2e8f0;
+  --border-strong:#cbd5e1;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.05);
+  --shadow:0 4px 14px rgba(15,23,42,.08);
+  --shadow-lg:0 18px 40px -12px rgba(37,99,235,.25);
 }
 
 /* =========================================================
    LAYOUT
    ========================================================= */
-.con{width:100%;max-width:var(--container);margin:0 auto;padding:0 24px}
+.con{width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
+@media (max-width:480px){.con{padding:0 14px}}
 section{padding:90px 0;position:relative}
 @media (max-width:767px){section{padding:60px 0}}
 
@@ -170,11 +175,11 @@ section{padding:90px 0;position:relative}
    ========================================================= */
 header{
   position:sticky;top:0;z-index:900;
-  background:rgba(255,255,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(15,23,42,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid var(--border);
   height:var(--header-h);
 }
-[data-theme="dark"] header{background:rgba(15,23,42,.85)}
+[data-theme="light"] header{background:rgba(255,255,255,.85)}
 .header-inner{
   display:flex;align-items:center;justify-content:space-between;
   height:100%;gap:20px;
@@ -197,9 +202,10 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
 }
 .theme-btn:hover{background:var(--primary-light);color:var(--primary)}
 .theme-btn svg{width:20px;height:20px}
-.theme-btn .sun{display:none}
-[data-theme="dark"] .theme-btn .moon{display:none}
-[data-theme="dark"] .theme-btn .sun{display:block}
+.theme-btn .moon{display:none}
+.theme-btn .sun{display:block}
+[data-theme="light"] .theme-btn .moon{display:block}
+[data-theme="light"] .theme-btn .sun{display:none}
 
 .phone-btn{
   display:inline-flex;align-items:center;gap:8px;
@@ -254,11 +260,11 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   padding:8px 14px;border-radius:999px;
-  background:rgba(245,158,11,.14);color:var(--warn-dark);
+  background:rgba(245,158,11,.14);color:var(--warn);
   font-weight:700;font-size:13px;margin-bottom:24px;
   animation:fadeUp .6s ease both;
 }
-[data-theme="dark"] .hero-badge{color:var(--warn)}
+[data-theme="light"] .hero-badge{color:var(--warn-dark)}
 .hero-badge .dot{
   width:8px;height:8px;border-radius:50%;background:var(--warn);
   box-shadow:0 0 0 0 rgba(245,158,11,.6);animation:pulse 2s infinite;
@@ -340,13 +346,14 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
 .hero-chip.chip-3 .ic{background:var(--success)}
 @media (max-width:959px){
   .hero-visual .main-img{aspect-ratio:5/4;max-width:520px;margin:0 auto}
-  .hero-chip.chip-1{left:10px}
-  .hero-chip.chip-2{right:10px}
-  .hero-chip.chip-3{right:20px}
+  .hero-chip.chip-1{left:8px}
+  .hero-chip.chip-2{right:8px}
+  .hero-chip.chip-3{right:16px}
 }
 @media (max-width:480px){
-  .hero-chip{padding:10px 12px}
+  .hero-chip{padding:10px 12px;max-width:62%}
   .hero-chip .ic{width:34px;height:34px}
+  .hero-chip .ic svg{width:18px;height:18px}
   .hero-chip .txt .t{font-size:12px}
   .hero-chip .txt .s{font-size:10px}
 }
@@ -409,6 +416,7 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
   transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--card-color,var(--primary));
 }
 .service-card[data-cat="ac"]{--card-color:var(--primary)}
+.service-card[data-cat="auto"]{--card-color:#ef4444}
 .service-card[data-cat="boiler"]{--card-color:var(--warn)}
 .service-card[data-cat="wash"]{--card-color:var(--cyan)}
 .service-card[data-cat="stove"]{--card-color:var(--success)}
@@ -478,60 +486,6 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
 .price-table .t-time{color:var(--text-mute);font-size:13px;white-space:nowrap}
 
 .price-cta{text-align:center;margin-top:28px}
-
-/* =========================================================
-   CALCULATOR
-   ========================================================= */
-.calc-wrap{
-  display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start;
-  background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);
-  padding:40px;box-shadow:var(--shadow);
-}
-@media (max-width:959px){.calc-wrap{grid-template-columns:1fr;padding:28px}}
-
-.calc-form{display:grid;gap:20px}
-.calc-field label{
-  display:block;font-weight:700;font-size:13px;color:var(--text-dark);
-  margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em;
-}
-.calc-field select,.calc-field input[type="text"]{
-  width:100%;padding:12px 14px;background:var(--bg-soft);
-  border:2px solid transparent;border-radius:var(--r-sm);
-  font-size:14px;color:var(--text-dark);transition:.2s;
-}
-.calc-field select:focus,.calc-field input:focus{outline:none;border-color:var(--primary);background:var(--bg-card)}
-
-.calc-radio{display:flex;gap:10px;flex-wrap:wrap}
-.calc-radio label{
-  flex:1;min-width:120px;padding:11px 14px;border-radius:var(--r-sm);
-  background:var(--bg-soft);border:2px solid transparent;
-  font-size:13px;font-weight:600;color:var(--text-dark);
-  cursor:pointer;text-align:center;transition:.2s;text-transform:none;letter-spacing:0;
-  display:flex;align-items:center;justify-content:center;gap:6px;margin:0;
-}
-.calc-radio input{display:none}
-.calc-radio input:checked + span{color:var(--primary)}
-.calc-radio label:has(input:checked){border-color:var(--primary);background:var(--primary-light);color:var(--primary)}
-
-.calc-result{
-  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
-  border-radius:var(--r);padding:28px;color:#fff;position:sticky;top:calc(var(--header-h) + 20px);
-}
-.calc-result .rl{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.8;margin-bottom:10px}
-.calc-result .rs{
-  font-family:'Bebas Neue',sans-serif;font-size:64px;line-height:1;letter-spacing:.01em;
-  transition:.3s;
-}
-.calc-result .rs .cur{font-size:32px;opacity:.75;margin-left:6px}
-.calc-result .rb{
-  margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);
-  display:grid;gap:6px;font-size:13px;
-}
-.calc-result .rb-row{display:flex;justify-content:space-between;opacity:.9}
-.calc-result .rb-row .v{font-weight:700;opacity:1}
-.calc-result .btn{margin-top:20px;width:100%;background:#fff;color:var(--primary)}
-.calc-result .btn:hover{background:var(--warn);color:#fff}
-
 /* =========================================================
    BRANDS
    ========================================================= */
@@ -580,9 +534,9 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
    WORKS (before / after)
    ========================================================= */
 .works-section{background:var(--bg-soft)}
-.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media (max-width:959px){.works-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:600px){.works-grid{grid-template-columns:1fr}}
+.works-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:959px){.works-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+@media (max-width:480px){.works-grid{gap:12px}}
 
 .work-card{
   background:var(--bg-card);border-radius:var(--r);overflow:hidden;
@@ -614,10 +568,15 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
 .work-ba .lbl.before{top:12px;left:12px}
 .work-ba .lbl.after{top:12px;right:12px;clip-path:none}
 
-.work-body{padding:18px 22px}
-.work-body h3{font-size:15px;font-weight:800;color:var(--text-dark);margin-bottom:6px;line-height:1.3}
-.work-body .meta{display:flex;gap:14px;font-size:12px;color:var(--text-mute);flex-wrap:wrap}
-.work-body .meta span{display:inline-flex;align-items:center;gap:4px}
+.work-body{padding:16px 18px}
+.work-body h3{font-size:14px;font-weight:800;color:var(--text-dark);margin-bottom:6px;line-height:1.3}
+.work-body .meta{display:flex;gap:10px;font-size:11px;color:var(--text-mute);flex-wrap:wrap}
+.work-body .meta span{display:inline-flex;align-items:center;gap:3px}
+@media (max-width:480px){
+  .work-body{padding:12px 14px}
+  .work-body h3{font-size:13px}
+  .work-body .meta{font-size:10.5px;gap:8px}
+}
 
 /* =========================================================
    DISTRICTS
@@ -819,11 +778,11 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
    ========================================================= */
 .mbb{
   display:none;position:fixed;bottom:0;left:0;right:0;z-index:800;
-  background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(15,23,42,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-top:1px solid var(--border);
   padding:8px 4px calc(8px + env(safe-area-inset-bottom,0px));
 }
-[data-theme="dark"] .mbb{background:rgba(15,23,42,.95)}
+[data-theme="light"] .mbb{background:rgba(255,255,255,.95)}
 .mbb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
 .mbb-btn{
   display:flex;flex-direction:column;align-items:center;gap:3px;
@@ -845,6 +804,25 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 @media (max-width:767px){
   .mbb{display:block}
   body{padding-bottom:74px}
+}
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+.btt{
+  position:fixed;right:20px;bottom:24px;z-index:850;
+  width:48px;height:48px;border-radius:50%;
+  background:var(--primary);color:#fff;
+  display:grid;place-items:center;
+  box-shadow:0 8px 24px rgba(37,99,235,.4);
+  opacity:0;visibility:hidden;transform:translateY(16px);
+  transition:.3s;cursor:pointer;
+}
+.btt.show{opacity:1;visibility:visible;transform:translateY(0)}
+.btt:hover{background:var(--primary-dark);transform:translateY(-3px);box-shadow:0 12px 28px rgba(37,99,235,.55)}
+.btt svg{width:22px;height:22px}
+@media (max-width:767px){
+  .btt{bottom:88px;right:14px;width:44px;height:44px}
 }
 
 /* =========================================================
@@ -980,7 +958,6 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
     <nav class="main-nav" aria-label="Главная навигация">
       <a href="#services">Услуги</a>
       <a href="#prices">Цены</a>
-      <a href="#calc">Калькулятор</a>
       <a href="#works">Работы</a>
       <a href="#districts">Районы</a>
       <a href="#faq">FAQ</a>
@@ -992,9 +969,9 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <a href="tel:+77077052178" class="phone-btn" onclick="trackConversion('call_header')">
+      <a href="tel:+77477024171" class="phone-btn" onclick="trackConversion('call_header')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-        <span>+7&nbsp;707&nbsp;705&nbsp;21&nbsp;78</span>
+        <span>+7&nbsp;747&nbsp;702&nbsp;41&nbsp;71</span>
       </a>
       <button class="burger-btn" id="burgerBtn" aria-label="Меню">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -1018,7 +995,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
           Вызвать мастера
         </button>
-        <a href="#calc" class="btn btn-outline">
+        <a href="#prices" class="btn btn-outline">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h4"/></svg>
           Узнать цену
         </a>
@@ -1087,9 +1064,10 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
     <div class="filters">
       <button class="filter-btn active" data-filter="all">Все</button>
       <button class="filter-btn" data-filter="ac">Кондиционеры</button>
-      <button class="filter-btn" data-filter="boiler">Газовые котлы</button>
-      <button class="filter-btn" data-filter="wash">Стиральные · посудомойки</button>
-      <button class="filter-btn" data-filter="stove">Варочные панели</button>
+      <button class="filter-btn" data-filter="auto">Авто</button>
+      <button class="filter-btn" data-filter="boiler">Котлы</button>
+      <button class="filter-btn" data-filter="wash">Стирал. · посуд.</button>
+      <button class="filter-btn" data-filter="stove">Варочные</button>
     </div>
 
     <div class="services-grid" id="servicesGrid">
@@ -1131,6 +1109,17 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         <div class="foot">
           <div class="price">15&nbsp;000&nbsp;₸ <small>от</small></div>
           <button class="more" onclick="openModal('order','ТО кондиционера')">Заказать →</button>
+        </div>
+      </div>
+
+      <!-- Auto AC services -->
+      <div class="service-card" data-cat="auto">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M3 13l2-6h14l2 6M5 17v3H3v-3M19 17v3h2v-3M5 13h14"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg></div>
+        <h3>Заправка автокондиционера</h3>
+        <p class="desc">Выезд к&nbsp;авто в&nbsp;любой район города. Заправка, диагностика, устранение утечек.</p>
+        <div class="foot">
+          <div class="price">10&nbsp;000&nbsp;₸ <small>от</small></div>
+          <button class="more" onclick="openModal('order','Заправка автокондиционера')">Заказать →</button>
         </div>
       </div>
 
@@ -1221,6 +1210,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 
     <div class="price-tabs" role="tablist">
       <button class="price-tab active" data-panel="ac">Кондиционеры</button>
+      <button class="price-tab" data-panel="auto">Автокондиционеры</button>
       <button class="price-tab" data-panel="boiler">Газовые котлы</button>
       <button class="price-tab" data-panel="wash">Стир. / посудомойки</button>
       <button class="price-tab" data-panel="stove">Варочные панели</button>
@@ -1253,6 +1243,25 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
             <tr><td class="t-name">Устранение течи</td><td class="t-desc">Внутренний блок</td><td class="t-price">от 7 000 ₸</td><td class="t-time">40 мин</td></tr>
             <tr><td class="t-name">Промывка дренажа</td><td class="t-desc">Дренажная система</td><td class="t-price">от 6 000 ₸</td><td class="t-time">30 мин</td></tr>
             <tr><td class="t-name">Антибактериальная обработка</td><td class="t-desc">Дезинфекция</td><td class="t-price">от 5 000 ₸</td><td class="t-time">20 мин</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Auto AC panel -->
+    <div class="price-panel" data-panel="auto">
+      <div class="price-note">Выезд к&nbsp;вашему авто в&nbsp;любой район Алматы. Заправка, диагностика и&nbsp;мелкий ремонт на&nbsp;месте — без&nbsp;заезда в&nbsp;автосервис.</div>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead><tr><th>Услуга</th><th>Описание</th><th>Цена</th><th>Время</th></tr></thead>
+          <tbody>
+            <tr><td class="t-name">Заправка автокондиционера R-134a</td><td class="t-desc">Полная заправка</td><td class="t-price">от 10 000 ₸</td><td class="t-time">30 мин</td></tr>
+            <tr><td class="t-name">Заправка R-1234yf</td><td class="t-desc">Новые авто</td><td class="t-price">от 18 000 ₸</td><td class="t-time">30 мин</td></tr>
+            <tr><td class="t-name">Дозаправка фреоном</td><td class="t-desc">Добавление хладагента</td><td class="t-price">от 6 000 ₸</td><td class="t-time">20 мин</td></tr>
+            <tr><td class="t-name">Диагностика авто-кондея</td><td class="t-desc">Проверка давления</td><td class="t-price">4 000 ₸</td><td class="t-time">20 мин</td></tr>
+            <tr><td class="t-name">Поиск и устранение утечки</td><td class="t-desc">С&nbsp;УФ-красителем</td><td class="t-price">от 8 000 ₸</td><td class="t-time">45 мин</td></tr>
+            <tr><td class="t-name">Антибакт. обработка испарителя</td><td class="t-desc">Дезинфекция салона</td><td class="t-price">от 6 000 ₸</td><td class="t-time">30 мин</td></tr>
+            <tr><td class="t-name">Вакуумирование системы</td><td class="t-desc">После ремонта</td><td class="t-price">от 5 000 ₸</td><td class="t-time">20 мин</td></tr>
           </tbody>
         </table>
       </div>
@@ -1342,88 +1351,6 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 
     <div class="price-cta">
       <button class="btn btn-primary" onclick="openModal('order')">Заказать услугу по&nbsp;прайсу</button>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CALCULATOR ============ -->
-<section id="calc">
-  <div class="con">
-    <div class="section-head">
-      <span class="eyebrow">Калькулятор</span>
-      <h2>Узнайте стоимость за 30 секунд</h2>
-      <p>Предварительный расчёт стоимости работ. Финальная цена фиксируется после диагностики.</p>
-    </div>
-
-    <div class="calc-wrap">
-      <div class="calc-form">
-        <div class="calc-field">
-          <label>Тип техники</label>
-          <select id="cType">
-            <option value="ac">Кондиционер</option>
-            <option value="boiler">Газовый котёл</option>
-            <option value="washer">Стиральная машина</option>
-            <option value="dryer">Сушильная машина</option>
-            <option value="dish">Посудомоечная машина</option>
-            <option value="stove">Варочная панель</option>
-          </select>
-        </div>
-
-        <div class="calc-field">
-          <label>Тип услуги</label>
-          <select id="cService"></select>
-        </div>
-
-        <div class="calc-field">
-          <label>Бренд техники (опционально)</label>
-          <select id="cBrand">
-            <option value="1">Стандартный бренд</option>
-            <option value="1.15">Премиум (Daikin, Bosch, Siemens, Miele)</option>
-            <option value="0.95">Бюджетный бренд</option>
-          </select>
-        </div>
-
-        <div class="calc-field" id="cFloorWrap">
-          <label>Этаж / высота (для внешнего блока)</label>
-          <select id="cFloor">
-            <option value="1">1-й этаж</option>
-            <option value="1.05">2–5 этаж</option>
-            <option value="1.15">Выше 5 этажа</option>
-          </select>
-        </div>
-
-        <div class="calc-field">
-          <label>Заказчик</label>
-          <div class="calc-radio">
-            <label><input type="radio" name="cClient" value="physical" checked><span>Физлицо</span></label>
-            <label><input type="radio" name="cClient" value="legal"><span>Юрлицо&nbsp;(+НДС)</span></label>
-          </div>
-        </div>
-
-        <div class="calc-field">
-          <label>Срочность</label>
-          <div class="calc-radio">
-            <label><input type="radio" name="cUrgent" value="0" checked><span>Обычный</span></label>
-            <label><input type="radio" name="cUrgent" value="0.2"><span>Срочный&nbsp;+20%</span></label>
-            <label><input type="radio" name="cUrgent" value="0.3"><span>Ночной&nbsp;+30%</span></label>
-          </div>
-        </div>
-      </div>
-
-      <div class="calc-result">
-        <div class="rl">Итого</div>
-        <div class="rs"><span id="calcSum">12&nbsp;000</span><span class="cur">₸</span></div>
-        <div class="rb">
-          <div class="rb-row"><span>Базовая цена</span><span class="v" id="rbBase">12 000 ₸</span></div>
-          <div class="rb-row"><span>Коэф. бренда</span><span class="v" id="rbBrand">×1.00</span></div>
-          <div class="rb-row" id="rbFloorWrap"><span>Коэф. этажа</span><span class="v" id="rbFloor">×1.00</span></div>
-          <div class="rb-row"><span>Срочность</span><span class="v" id="rbUrgent">+0%</span></div>
-          <div class="rb-row" id="rbVatWrap" style="display:none"><span>НДС 12%</span><span class="v">×1.12</span></div>
-        </div>
-        <button class="btn" onclick="callFromCalc()">
-          Вызвать мастера по расчёту
-        </button>
-      </div>
     </div>
   </div>
 </section>
@@ -1584,38 +1511,8 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
       <!-- 3 -->
       <div class="work-card">
         <div class="work-ba">
-          <!-- <img src="/images/work-3-before.jpg" alt="Стиральная машина до ремонта" class="before"> -->
-          <!-- <img src="/images/work-3-after.jpg" alt="Стиральная машина после ремонта" class="after"> -->
-          <div class="lbl before">До</div>
-          <div class="lbl after">После</div>
-          <div class="slider"></div>
-        </div>
-        <div class="work-body">
-          <h3>Ремонт стиральной машины Bosch</h3>
-          <div class="meta"><span>📍 Медеу</span><span>⏱ Замена ТЭНа</span><span>💰 14 000 ₸</span></div>
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="work-card">
-        <div class="work-ba">
-          <!-- <img src="/images/work-4-before.jpg" alt="Внешний блок до чистки" class="before"> -->
-          <!-- <img src="/images/work-4-after.jpg" alt="Внешний блок после чистки" class="after"> -->
-          <div class="lbl before">До</div>
-          <div class="lbl after">После</div>
-          <div class="slider"></div>
-        </div>
-        <div class="work-body">
-          <h3>Чистка внешнего блока</h3>
-          <div class="meta"><span>📍 Коктем</span><span>⏱ 45 мин</span><span>💰 8 000 ₸</span></div>
-        </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="work-card">
-        <div class="work-ba">
-          <!-- <img src="/images/work-5-before.jpg" alt="Газовый котёл до чистки" class="before"> -->
-          <!-- <img src="/images/work-5-after.jpg" alt="Газовый котёл после чистки" class="after"> -->
+          <!-- <img src="/images/work-3-before.jpg" alt="Котёл Baxi до чистки" class="before"> -->
+          <!-- <img src="/images/work-3-after.jpg" alt="Котёл Baxi после чистки" class="after"> -->
           <div class="lbl before">До</div>
           <div class="lbl after">После</div>
           <div class="slider"></div>
@@ -1626,66 +1523,22 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         </div>
       </div>
 
-      <!-- 6 -->
+      <!-- 4 -->
       <div class="work-card">
         <div class="work-ba">
-          <!-- <img src="/images/work-6-before.jpg" alt="Посудомойка до ремонта" class="before"> -->
-          <!-- <img src="/images/work-6-after.jpg" alt="Посудомойка после ремонта" class="after"> -->
+          <!-- <img src="/images/work-4-before.jpg" alt="Внутренний блок до химчистки" class="before"> -->
+          <!-- <img src="/images/work-4-after.jpg" alt="Внутренний блок после химчистки" class="after"> -->
           <div class="lbl before">До</div>
           <div class="lbl after">После</div>
           <div class="slider"></div>
         </div>
         <div class="work-body">
-          <h3>Ремонт посудомойки Bosch</h3>
-          <div class="meta"><span>📍 Орбита</span><span>⏱ Замена насоса</span><span>💰 12 000 ₸</span></div>
-        </div>
-      </div>
-
-      <!-- 7 -->
-      <div class="work-card">
-        <div class="work-ba">
-          <!-- <img src="/images/work-7-before.jpg" alt="Внутренний блок до химчистки" class="before"> -->
-          <!-- <img src="/images/work-7-after.jpg" alt="Внутренний блок после химчистки" class="after"> -->
-          <div class="lbl before">До</div>
-          <div class="lbl after">После</div>
-          <div class="slider"></div>
-        </div>
-        <div class="work-body">
-          <h3>Химчистка внутреннего блока Daikin</h3>
+          <h3>Химчистка блока Daikin</h3>
           <div class="meta"><span>📍 Алмалинский р-н</span><span>⏱ 40 мин</span><span>💰 12 000 ₸</span></div>
         </div>
       </div>
-
-      <!-- 8 -->
-      <div class="work-card">
-        <div class="work-ba">
-          <!-- <img src="/images/work-8-before.jpg" alt="Варочная панель до полировки" class="before"> -->
-          <!-- <img src="/images/work-8-after.jpg" alt="Варочная панель после полировки" class="after"> -->
-          <div class="lbl before">До</div>
-          <div class="lbl after">После</div>
-          <div class="slider"></div>
-        </div>
-        <div class="work-body">
-          <h3>Удаление пригоревшего сахара</h3>
-          <div class="meta"><span>📍 Каменское плато</span><span>⏱ 45 мин</span><span>💰 7 000 ₸</span></div>
-        </div>
-      </div>
-
-      <!-- 9 -->
-      <div class="work-card">
-        <div class="work-ba">
-          <!-- <img src="/images/work-9-before.jpg" alt="Дренаж до прочистки" class="before"> -->
-          <!-- <img src="/images/work-9-after.jpg" alt="Дренаж после прочистки" class="after"> -->
-          <div class="lbl before">До</div>
-          <div class="lbl after">После</div>
-          <div class="slider"></div>
-        </div>
-        <div class="work-body">
-          <h3>Промывка дренажной системы</h3>
-          <div class="meta"><span>📍 Мамыр</span><span>⏱ 30 мин</span><span>💰 6 000 ₸</span></div>
-        </div>
-      </div>
     </div>
+
   </div>
 </section>
 
@@ -1743,8 +1596,8 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
   <div class="con">
     <div class="section-head">
       <span class="eyebrow">Для юрлиц</span>
-      <h2>Работаем с организациями официально</h2>
-      <p>Сервисные договоры, плановое обслуживание, полный пакет закрывающих документов</p>
+      <h2>Официально работаем с юрлицами</h2>
+      <p>Сервисные договоры, плановое ТО, полный пакет закрывающих документов</p>
     </div>
 
     <div class="legal-grid">
@@ -1771,7 +1624,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         <p>Оставьте заявку — подготовим коммерческое предложение под&nbsp;ваш объект в&nbsp;течение 24&nbsp;часов.</p>
         <button class="btn btn-primary" onclick="openModal('legal')">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
-          Получить коммерческое предложение
+          Получить КП
         </button>
       </div>
     </div>
@@ -1783,8 +1636,8 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
   <div class="con">
     <div class="section-head">
       <span class="eyebrow">Как это работает</span>
-      <h2>4 шага от заявки до&nbsp;результата</h2>
-      <p>Простой и&nbsp;прозрачный процесс — никаких сюрпризов</p>
+      <h2>От заявки до результата — 4 шага</h2>
+      <p>Простой и&nbsp;прозрачный процесс без&nbsp;сюрпризов</p>
     </div>
 
     <div class="process-grid">
@@ -1871,9 +1724,9 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
   <div class="con">
     <div class="final-cta-inner">
       <h2>Ваша техника снова заработает сегодня</h2>
-      <p>Оставьте заявку — мастер приедет за&nbsp;60&nbsp;минут. Или позвоните прямо сейчас.</p>
+      <p>Оставьте заявку — мастер приедет за&nbsp;60&nbsp;минут</p>
       <div class="cta-row">
-        <a href="tel:+77077052178" class="btn btn-primary" onclick="trackConversion('call_final')">
+        <a href="tel:+77477024171" class="btn btn-primary" onclick="trackConversion('call_final')">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
           Позвонить
         </a>
@@ -1884,9 +1737,9 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
     </div>
 
     <div class="final-contacts">
-      <a href="tel:+77077052178" class="final-contact" onclick="trackConversion('call_contacts')">
+      <a href="tel:+77477024171" class="final-contact" onclick="trackConversion('call_contacts')">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
-        <div><div class="t">Телефон</div><div class="v">+7 707 705 21 78</div></div>
+        <div><div class="t">Телефон</div><div class="v">+7 747 702 41 71</div></div>
       </a>
       <a href="https://wa.me/77077052178" target="_blank" rel="noopener" class="final-contact" onclick="trackConversion('whatsapp_contacts')">
         <div class="ic" style="background:#25d366"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.5 14.38c-.28-.14-1.66-.82-1.92-.91-.26-.1-.44-.14-.63.14-.19.28-.72.91-.88 1.09-.16.19-.33.21-.6.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.56.12-.12.28-.33.42-.49.14-.16.19-.28.28-.46.09-.19.05-.35-.02-.49-.07-.14-.63-1.51-.86-2.07-.23-.55-.46-.47-.63-.47l-.54-.01c-.18 0-.48.07-.74.35-.26.28-.97.95-.97 2.31 0 1.36 1 2.67 1.14 2.85.14.19 1.96 3 4.75 4.21.66.29 1.18.46 1.58.59.67.21 1.27.18 1.75.11.53-.08 1.66-.68 1.89-1.33.23-.65.23-1.2.16-1.33-.06-.12-.25-.2-.53-.34zM12 2.04C6.5 2.04 2.04 6.5 2.04 12c0 1.76.46 3.45 1.33 4.95L2 22l5.22-1.36c1.45.79 3.08 1.21 4.78 1.21 5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.03-5.17-2.92-7.05C17.17 3.07 14.66 2.04 12 2.04"/></svg></div>
@@ -1917,7 +1770,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         <div class="footer-social">
           <a href="https://wa.me/77077052178" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.38c-.28-.14-1.66-.82-1.92-.91-.26-.1-.44-.14-.63.14-.19.28-.72.91-.88 1.09-.16.19-.33.21-.6.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.56.12-.12.28-.33.42-.49.14-.16.19-.28.28-.46.09-.19.05-.35-.02-.49-.07-.14-.63-1.51-.86-2.07-.23-.55-.46-.47-.63-.47l-.54-.01c-.18 0-.48.07-.74.35-.26.28-.97.95-.97 2.31 0 1.36 1 2.67 1.14 2.85.14.19 1.96 3 4.75 4.21.66.29 1.18.46 1.58.59.67.21 1.27.18 1.75.11.53-.08 1.66-.68 1.89-1.33.23-.65.23-1.2.16-1.33-.06-.12-.25-.2-.53-.34zM12 2.04C6.5 2.04 2.04 6.5 2.04 12c0 1.76.46 3.45 1.33 4.95L2 22l5.22-1.36c1.45.79 3.08 1.21 4.78 1.21 5.5 0 9.96-4.46 9.96-9.96 0-2.66-1.03-5.17-2.92-7.05C17.17 3.07 14.66 2.04 12 2.04"/></svg></a>
           <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 3L2 10l6.5 2.5L19 5 10.5 14 10 21l4-3.5 5.5 4 2.5-18.5z"/></svg></a>
-          <a href="tel:+77077052178" aria-label="Телефон"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></a>
+          <a href="tel:+77477024171" aria-label="Телефон"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></a>
         </div>
       </div>
 
@@ -1926,6 +1779,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         <ul>
           <li><a href="#services">Ремонт кондиционеров</a></li>
           <li><a href="#services">Заправка фреоном</a></li>
+          <li><a href="#services">Заправка автокондиционеров</a></li>
           <li><a href="#services">Чистка кондиционеров</a></li>
           <li><a href="#services">Ремонт газовых котлов</a></li>
           <li><a href="#services">Чистка газовых котлов</a></li>
@@ -1940,7 +1794,6 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
         <h4>Информация</h4>
         <ul>
           <li><a href="#prices">Прайс-лист</a></li>
-          <li><a href="#calc">Калькулятор</a></li>
           <li><a href="#works">Наши работы</a></li>
           <li><a href="#districts">Районы Алматы</a></li>
           <li><a href="#legal">Юридическим лицам</a></li>
@@ -1952,7 +1805,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
       <div class="footer-col">
         <h4>Контакты</h4>
         <ul>
-          <li><a href="tel:+77077052178">+7 707 705 21 78</a></li>
+          <li><a href="tel:+77477024171">+7 747 702 41 71</a></li>
           <li><a href="https://wa.me/77077052178" target="_blank" rel="noopener">WhatsApp</a></li>
           <li>г. Алматы, Казахстан</li>
           <li>Режим: ежедневно, 24/7</li>
@@ -1975,6 +1828,11 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
   </div>
 </footer>
 
+<!-- ============ BACK TO TOP ============ -->
+<button class="btt" id="bttBtn" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
 <!-- ============ MOBILE BOTTOM BAR ============ -->
 <nav class="mbb" aria-label="Быстрые действия">
   <div class="mbb-grid">
@@ -1982,11 +1840,11 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
       <span>Услуги</span>
     </a>
-    <a href="#prices" class="mbb-btn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-      <span>Цены</span>
+    <a href="#brands" class="mbb-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><circle cx="7" cy="7" r="1.5"/></svg>
+      <span>Бренды</span>
     </a>
-    <a href="tel:+77077052178" class="mbb-btn call" onclick="trackConversion('call_mbb')">
+    <a href="tel:+77477024171" class="mbb-btn call" onclick="trackConversion('call_mbb')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
       <span>Звонок</span>
     </a>
@@ -2012,6 +1870,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
       <div class="burger-group">
         <h5>Услуги</h5>
         <a href="#services" onclick="closeBurger()">Заправка кондиционеров фреоном</a>
+        <a href="#services" onclick="closeBurger()">Заправка автокондиционеров</a>
         <a href="#services" onclick="closeBurger()">Чистка кондиционеров</a>
         <a href="#services" onclick="closeBurger()">Ремонт кондиционеров</a>
         <a href="#services" onclick="closeBurger()">ТО кондиционеров</a>
@@ -2055,7 +1914,6 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
       <div class="burger-group">
         <h5>Для клиентов</h5>
         <a href="#prices" onclick="closeBurger()">Прайс-лист</a>
-        <a href="#calc" onclick="closeBurger()">Калькулятор</a>
         <a href="#works" onclick="closeBurger()">Наши работы</a>
         <a href="#legal" onclick="closeBurger()">Юридическим лицам</a>
         <a href="#why" onclick="closeBurger()">Гарантия</a>
@@ -2064,7 +1922,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 
       <div class="burger-group">
         <h5>Контакты</h5>
-        <a href="tel:+77077052178" onclick="trackConversion('call_burger')">+7 707 705 21 78</a>
+        <a href="tel:+77477024171" onclick="trackConversion('call_burger')">+7 747 702 41 71</a>
         <a href="https://wa.me/77077052178" target="_blank" rel="noopener" onclick="trackConversion('whatsapp_burger')">WhatsApp</a>
         <a href="#contacts" onclick="closeBurger()">Адрес и режим</a>
       </div>
@@ -2104,7 +1962,8 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
             <label>Тип услуги</label>
             <select name="service" id="orderService">
               <option value="">Выберите услугу</option>
-              <option>Заправка фреоном</option>
+              <option>Заправка фреоном (кондиционер)</option>
+              <option>Заправка автокондиционера</option>
               <option>Чистка кондиционера</option>
               <option>Ремонт кондиционера</option>
               <option>ТО кондиционера</option>
@@ -2122,6 +1981,7 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
             <select name="equip" id="orderEquip">
               <option value="">Выберите технику</option>
               <option>Кондиционер</option>
+              <option>Автокондиционер</option>
               <option>Газовый котёл</option>
               <option>Стиральная машина</option>
               <option>Сушильная машина</option>
@@ -2236,28 +2096,34 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 <div class="toast" id="toast">Заявка отправлена! Перезвоним в течение 10 минут.</div>
 
 <script>
-/* ========== THEME ========== */
+/* ========== THEME (dark by default) ========== */
 const themeBtn = document.getElementById('themeBtn');
 const savedTheme = localStorage.getItem('cs-theme');
-if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme','dark');
+if (savedTheme === 'light') document.documentElement.setAttribute('data-theme','light');
 themeBtn.addEventListener('click', () => {
   const cur = document.documentElement.getAttribute('data-theme');
-  if (cur === 'dark') {
+  if (cur === 'light') {
     document.documentElement.removeAttribute('data-theme');
-    localStorage.setItem('cs-theme','light');
-  } else {
-    document.documentElement.setAttribute('data-theme','dark');
     localStorage.setItem('cs-theme','dark');
+  } else {
+    document.documentElement.setAttribute('data-theme','light');
+    localStorage.setItem('cs-theme','light');
   }
 });
 
-/* ========== SCROLL PROGRESS ========== */
+/* ========== SCROLL PROGRESS + BACK TO TOP ========== */
 const progress = document.getElementById('scrollProgress');
+const bttBtn = document.getElementById('bttBtn');
 window.addEventListener('scroll', () => {
   const h = document.documentElement;
   const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
   progress.style.width = scrolled + '%';
+  if (h.scrollTop > 400) bttBtn.classList.add('show');
+  else bttBtn.classList.remove('show');
 }, {passive:true});
+bttBtn.addEventListener('click', () => {
+  window.scrollTo({top:0, behavior:'smooth'});
+});
 
 /* ========== BURGER ========== */
 const burgerBtn = document.getElementById('burgerBtn');
@@ -2312,108 +2178,6 @@ priceTabs.forEach(t => t.addEventListener('click', () => {
   t.classList.add('active');
   document.querySelector(`.price-panel[data-panel="${t.dataset.panel}"]`).classList.add('active');
 }));
-
-/* ========== CALCULATOR ========== */
-const SERVICES = {
-  ac: [
-    {name:'Заправка фреоном R-410A',price:12000},
-    {name:'Заправка фреоном R-32',price:14000},
-    {name:'Заправка фреоном R-22',price:10000},
-    {name:'Дозаправка фреоном',price:6000},
-    {name:'Полная чистка (химчистка)',price:10000},
-    {name:'Чистка внешнего блока',price:8000},
-    {name:'Комплексное ТО',price:15000},
-    {name:'Диагностика',price:5000},
-    {name:'Ремонт компрессора',price:25000},
-    {name:'Ремонт платы управления',price:15000},
-    {name:'Устранение утечки фреона',price:15000}
-  ],
-  boiler: [
-    {name:'Чистка газового котла',price:15000},
-    {name:'ТО котла перед сезоном',price:18000},
-    {name:'Ремонт котла',price:12000},
-    {name:'Замена теплообменника',price:25000},
-    {name:'Замена циркуляц. насоса',price:15000},
-    {name:'Ремонт платы',price:20000},
-    {name:'Промывка системы',price:25000}
-  ],
-  washer: [
-    {name:'Диагностика',price:4000},
-    {name:'Замена ТЭНа',price:10000},
-    {name:'Замена подшипников',price:22000},
-    {name:'Замена помпы',price:9000},
-    {name:'Замена амортизаторов',price:12000},
-    {name:'Ремонт платы управления',price:18000},
-    {name:'Чистка от накипи',price:8000}
-  ],
-  dryer: [
-    {name:'Диагностика',price:4000},
-    {name:'Ремонт сушильной машины',price:12000},
-    {name:'Чистка конденсатора',price:7000},
-    {name:'Замена ТЭНа',price:13000},
-    {name:'Ремонт модуля',price:18000}
-  ],
-  dish: [
-    {name:'Диагностика',price:4000},
-    {name:'Ремонт посудомойки',price:10000},
-    {name:'Чистка от накипи',price:7000},
-    {name:'Замена циркуляц. насоса',price:12000},
-    {name:'Замена сливного насоса',price:9000},
-    {name:'Замена ТЭНа',price:11000},
-    {name:'Ремонт платы',price:17000}
-  ],
-  stove: [
-    {name:'Полировка стеклокерамики',price:8000},
-    {name:'Полировка индукции',price:9000},
-    {name:'Удаление глубоких царапин',price:12000},
-    {name:'Удаление пригоревших пятен',price:6000},
-    {name:'Премиум-полировка',price:15000}
-  ]
-};
-const cType = document.getElementById('cType');
-const cService = document.getElementById('cService');
-const cBrand = document.getElementById('cBrand');
-const cFloor = document.getElementById('cFloor');
-const cFloorWrap = document.getElementById('cFloorWrap');
-
-function populateServices(){
-  const list = SERVICES[cType.value] || [];
-  cService.innerHTML = list.map(s => `<option value="${s.price}">${s.name} — от ${s.price.toLocaleString('ru')} ₸</option>`).join('');
-  cFloorWrap.style.display = (cType.value === 'ac') ? '' : 'none';
-  document.getElementById('rbFloorWrap').style.display = (cType.value === 'ac') ? '' : 'none';
-  calc();
-}
-function calc(){
-  const base = +cService.value || 0;
-  const brand = +cBrand.value;
-  const floor = cType.value === 'ac' ? +cFloor.value : 1;
-  const urgent = +document.querySelector('input[name="cUrgent"]:checked').value;
-  const isLegal = document.querySelector('input[name="cClient"]:checked').value === 'legal';
-  let total = base * brand * floor * (1 + urgent);
-  if (isLegal) total *= 1.12;
-  total = Math.round(total / 100) * 100;
-
-  document.getElementById('calcSum').textContent = total.toLocaleString('ru');
-  document.getElementById('rbBase').textContent = base.toLocaleString('ru') + ' ₸';
-  document.getElementById('rbBrand').textContent = '×' + brand.toFixed(2);
-  document.getElementById('rbFloor').textContent = '×' + floor.toFixed(2);
-  document.getElementById('rbUrgent').textContent = '+' + Math.round(urgent*100) + '%';
-  document.getElementById('rbVatWrap').style.display = isLegal ? '' : 'none';
-}
-cType.addEventListener('change', populateServices);
-cService.addEventListener('change', calc);
-cBrand.addEventListener('change', calc);
-cFloor.addEventListener('change', calc);
-document.querySelectorAll('input[name="cClient"], input[name="cUrgent"]').forEach(r => r.addEventListener('change', calc));
-populateServices();
-
-function callFromCalc(){
-  const serviceName = cService.options[cService.selectedIndex].text.split(' — ')[0];
-  const typeName = cType.options[cType.selectedIndex].text;
-  const sum = document.getElementById('calcSum').textContent;
-  openModal('order', serviceName, '', '', `Расчёт по калькулятору: ${typeName}, ${serviceName} — около ${sum} ₸`);
-}
-window.callFromCalc = callFromCalc;
 
 /* ========== FAQ ========== */
 document.querySelectorAll('.faq-item').forEach(item => {
