@@ -587,16 +587,27 @@ nav.main-nav a:hover{background:var(--primary-light);color:var(--primary)}
 .districts-block h3{
   font-size:14px;font-weight:800;color:var(--text-dark);margin-bottom:14px;
   text-transform:uppercase;letter-spacing:.08em;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+}
+.free-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:4px 10px;border-radius:999px;
+  background:rgba(16,185,129,.15);color:var(--success);
+  font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:none;
+}
+.free-badge::before{
+  content:"";width:6px;height:6px;border-radius:50%;background:var(--success);
+  box-shadow:0 0 0 0 rgba(16,185,129,.6);animation:pulse 2s infinite;
 }
 .districts-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:32px}
 @media (max-width:600px){.districts-list{gap:6px}.districts-list a{padding:10px 12px;font-size:12.5px}}
 .districts-list a{
   padding:12px 14px;background:var(--bg-card);border:1px solid var(--border);
   border-radius:var(--r-sm);font-size:13.5px;color:var(--text-dark);
-  display:flex;align-items:center;justify-content:space-between;transition:.2s;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  transition:.2s;font-weight:600;
 }
 .districts-list a:hover{border-color:var(--primary);background:var(--primary-light);color:var(--primary)}
-.districts-list a .free{font-size:11px;color:var(--success);font-weight:700}
 
 /* =========================================================
    LEGAL (for juridical)
@@ -1557,38 +1568,38 @@ footer{background:#08101e;color:#cbd5e1;padding:60px 0 20px}
 
     <div class="districts-wrap">
       <div class="districts-block">
-        <h3>Все районы Алматы</h3>
+        <h3>Все районы Алматы <span class="free-badge">Выезд бесплатно</span></h3>
         <div class="districts-list">
-          <a href="#order" onclick="openModal('order','','','Алмалинский')">Ремонт в Алмалинском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Алатауский')">Ремонт в Алатауском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Ауэзовский')">Ремонт в Ауэзовском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Бостандыкский')">Ремонт в Бостандыкском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Жетысуский')">Ремонт в Жетысуском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Медеуский')">Ремонт в Медеуском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Наурызбайский')">Ремонт в Наурызбайском районе <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Турксибский')">Ремонт в Турксибском районе <span class="free">бесплатно</span></a>
+          <a href="#order" onclick="openModal('order','','','Алмалинский')">Алмалинский</a>
+          <a href="#order" onclick="openModal('order','','','Алатауский')">Алатауский</a>
+          <a href="#order" onclick="openModal('order','','','Ауэзовский')">Ауэзовский</a>
+          <a href="#order" onclick="openModal('order','','','Бостандыкский')">Бостандыкский</a>
+          <a href="#order" onclick="openModal('order','','','Жетысуский')">Жетысуский</a>
+          <a href="#order" onclick="openModal('order','','','Медеуский')">Медеуский</a>
+          <a href="#order" onclick="openModal('order','','','Наурызбайский')">Наурызбайский</a>
+          <a href="#order" onclick="openModal('order','','','Турксибский')">Турксибский</a>
         </div>
       </div>
 
       <div class="districts-block">
-        <h3>Популярные микрорайоны</h3>
+        <h3>Популярные микрорайоны <span class="free-badge">Выезд бесплатно</span></h3>
         <div class="districts-list">
-          <a href="#order" onclick="openModal('order','','','Самал')">Самал <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Мамыр')">Мамыр <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Аксай')">Аксай <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Орбита')">Орбита <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Коктем')">Коктем <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Каменское плато')">Каменское плато <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Горный гигант')">Горный гигант <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Дорожник')">Дорожник <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Зердели')">Зердели <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Нур Алатау')">Нур Алатау <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Алгабас')">Алгабас <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Калкаман')">Калкаман <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Таугуль')">Таугуль <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Карасу')">Карасу <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Кулагер')">Кулагер <span class="free">бесплатно</span></a>
-          <a href="#order" onclick="openModal('order','','','Жулдыз')">Жулдыз <span class="free">бесплатно</span></a>
+          <a href="#order" onclick="openModal('order','','','Самал')">Самал</a>
+          <a href="#order" onclick="openModal('order','','','Мамыр')">Мамыр</a>
+          <a href="#order" onclick="openModal('order','','','Аксай')">Аксай</a>
+          <a href="#order" onclick="openModal('order','','','Орбита')">Орбита</a>
+          <a href="#order" onclick="openModal('order','','','Коктем')">Коктем</a>
+          <a href="#order" onclick="openModal('order','','','Каменское плато')">Каменское плато</a>
+          <a href="#order" onclick="openModal('order','','','Горный гигант')">Горный гигант</a>
+          <a href="#order" onclick="openModal('order','','','Дорожник')">Дорожник</a>
+          <a href="#order" onclick="openModal('order','','','Зердели')">Зердели</a>
+          <a href="#order" onclick="openModal('order','','','Нур Алатау')">Нур Алатау</a>
+          <a href="#order" onclick="openModal('order','','','Алгабас')">Алгабас</a>
+          <a href="#order" onclick="openModal('order','','','Калкаман')">Калкаман</a>
+          <a href="#order" onclick="openModal('order','','','Таугуль')">Таугуль</a>
+          <a href="#order" onclick="openModal('order','','','Карасу')">Карасу</a>
+          <a href="#order" onclick="openModal('order','','','Кулагер')">Кулагер</a>
+          <a href="#order" onclick="openModal('order','','','Жулдыз')">Жулдыз</a>
         </div>
       </div>
     </div>
